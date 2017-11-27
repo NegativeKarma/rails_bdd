@@ -16,8 +16,8 @@ Given("I visit the landing page") do
   visit root_path
 end
 
-When("I click {string} link") do |new_article|
-  click_link_or_button new_article
+When("I click {string} link") do |link_name|
+  click_link_or_button link_name
 end
 
 When("I fill in {string} with {string}") do |string, string2|
