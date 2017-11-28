@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'new_article/new'
 
-  get 'landing/index'
+  # get 'landing/index'
 
   root controller: :landing, action: :index
+  resources :articles
 end
