@@ -13,6 +13,6 @@ Feature: Edit article
     And I click on "Edit" link
     When I fill in "Title" with "New Title"
     And I fill in "Content" with "New Content"
-    And I click "Update Article" button
+    And I click "Update" button
     Then I should be on "Edit" page
     And I should see "Updated Successfully"
