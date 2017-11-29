@@ -1,6 +1,7 @@
 Given("The following article exist") do |table|
-  # table is a Cucumber::MultilineArgument::DataTable
-  pending # Write code here that turns the phrase above into concrete actions
+  table.hashes.each do |article|
+    Article.create(article)
+  end
 end
 
 When("I visit {string} page") do |title|
