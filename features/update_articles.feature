@@ -11,8 +11,8 @@ Feature: Edit article
   Scenario: Blogger visits landing page and edits article
     When I visit "Learning Rails 5" page
     And I click on "Edit" link
-    When I fill in "Title" with "New Title"
-    And I fill in "Content" with "New Content"
+    When I fill in "Title" with "Edit Title"
+    And I fill in "Content" with "Edit Content"
     And I click "Update" button
-    Then I should be on "Edit" page
+    Then I should be on "Edit Title" page
     And I should see "Updated Successfully"
