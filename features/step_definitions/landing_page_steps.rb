@@ -16,6 +16,10 @@ Given("I visit the landing page") do
   visit root_path
 end
 
+Given("I click {string}") do |link|
+  click_link link
+end
+
 When("I click {string} link") do |link|
   click_link link
 end
