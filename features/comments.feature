@@ -10,7 +10,7 @@ Feature: Comment on article
     And I visit the landing page
 
   Scenario: User comments on article
-    Given I click "Comment"
+    Given I click "Show"
     And I fill in "Comment" with "Something"
     And I click "Post Comment"
     Then I should see "Something"
