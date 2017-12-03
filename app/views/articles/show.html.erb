@@ -6,6 +6,8 @@
 <%= form_for [@article, @article.comments.build] do |f| %>
   <%= f.label :reader %>
   <%= f.text_field :reader %>
+  <%= f.label :content %>
+  <%= f.text_area :content %>
 <% end %>
 
 <%= link_to 'Edit', edit_article_path(@article) %>
