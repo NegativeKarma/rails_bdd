@@ -7,11 +7,12 @@ Feature: Comment on article
     Given The following article exist
     | title                 | content                                |
     | Learning Rails 5      | Excited about learning a new framework |
-    And I visit the landing page
+    Given I visit the landing page
+    When I click "Show"
 
   Scenario: User comments on article
-    Given I click "Show"
+    And I visit "Learning Rails 5" page
     And I fill in "Reader" with "Something"
     And I fill in "Content" with "Something"
-    And I click "Post Comment"
+    And I click "Create Comment" button
     Then I should see "Something"
