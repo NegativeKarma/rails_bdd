@@ -3,4 +3,9 @@
 <h2><%= @article.title %></h2>
 <p><%= @article.content %></p>
 
+<%= form_for [@article, @article.comments.build] do |f| %>
+  <%= f.label :reader %>
+  <%= f.text_field :reader %>
+<% end %>
+
 <%= link_to 'Edit', edit_article_path(@article) %>

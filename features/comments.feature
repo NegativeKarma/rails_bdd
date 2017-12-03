@@ -11,6 +11,6 @@ Feature: Comment on article
 
   Scenario: User comments on article
     Given I click "Show"
-    And I fill in "Comment" with "Something"
+    And I fill in "Reader" with "Something"
     And I click "Post Comment"
     Then I should see "Something"
