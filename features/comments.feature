@@ -12,7 +12,7 @@ Feature: Comment on article
 
   Scenario: User comments on article
     And I visit "Learning Rails 5" page
-    And I fill in "Reader" with "Something"
+    And I fill in "Reader" as "mail@mail.com"
     And I fill in "Content" with "Something"
     And I click "Create Comment" button
     Then I should see "Something"

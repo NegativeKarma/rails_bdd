@@ -36,3 +36,7 @@ Then("I should be on {string} page") do |article_title|
   article = Article.find_by(title: article_title)
   expect(page.current_path).to eq "/articles/#{article.id}"
 end
+
+When("I fill in {string} as {string}") do |reader, email|
+  fill_in reader, with: email
+end
