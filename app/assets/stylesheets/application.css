@@ -15,3 +15,10 @@ body {
   width: 20%;
   margin-bottom: 25px
 }
+
+.form-text {
+  margin-left: 50%;
+  margin-right: 50%;
+  margin-bottom: 50px;
+  width: 20%;
+}
