@@ -40,3 +40,7 @@ end
 When("I fill in {string} as {string}") do |reader, email|
   fill_in reader, with: email
 end
+
+Then("show me the page") do
+  save_and_open_page
+end
