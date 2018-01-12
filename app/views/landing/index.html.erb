@@ -5,8 +5,9 @@
 <ul>
   <% @articles.each do |article| %>
     <li>
-      <%= article.title %><br />
-      <%= article.content %><br/>
+      <p><%= article.title %></p>
+      <p><%= article.content %></p>
+      <p>Written by <%= article.author %> at <%= Date.strptime("#{Article.first.created_at}", '%Y-%m-%d') %></p>
       <%= link_to 'Edit Article', edit_article_path(article) %><br/>
       <%= link_to 'Show', article_path(article)%>
     </li>
